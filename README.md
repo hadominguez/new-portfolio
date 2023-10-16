@@ -1,8 +1,52 @@
-# React + Vite
+# React Portfolio with Vite and Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio built with React, Vite, and Tailwind CSS! This project aims to present my profile in a clear and concise manner, including information about my education, work experience, skills, projects, and contact details.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [Installation](#installation)
+2. [Running the Project](#running-the-project)
+3. [Tools Used](#tools-used)
+4. [Contact](#contact)
+
+## Installation
+
+Before getting started, make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+```bash
+# Clone the repository
+git clone https://github.com/hadominguez/new-portfolio.git
+
+# Navigate to the project directory
+cd your-portfolio
+
+# Install dependencies
+npm install
+```
+
+## Running the Project
+
+Once the dependencies are installed, you can run the project locally.
+
+```bash
+# Start the development server
+npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser to view the portfolio.
+
+## Tools Used
+
+- **React**: JavaScript library for building user interfaces.
+- **Vite**: Fast build tool and development server for web applications.
+- **Tailwind CSS**: Low-level utility-first CSS framework for building modern interfaces.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out:
+
+- Email: your-email@example.com
+- LinkedIn: [Your Name](https://www.linkedin.com/in/your-name/)
+- Twitter: [@your_username](https://twitter.com/your_username)
+
+Thanks for visiting my portfolio! 😊
