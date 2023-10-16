@@ -46,6 +46,6 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser to view the
 If you have any questions or suggestions, feel free to reach out:
 
 - Email: dhariel2904@gmail.com
-- LinkedIn: [Your Name](https://www.linkedin.com/in/hadominguez/)
+- LinkedIn: [Hernán Ariel Domínguez](https://www.linkedin.com/in/hadominguez/)
 
 Thanks for visiting my portfolio! 😊
