@@ -1,7 +1,11 @@
+import { useTranslation } from 'react-i18next';
+
 const Projects = () => {
+    const { t } = useTranslation()
+
     return (
-        <>Projects</>
+        <>{t('projects_description')}</>
     );
-  }
-  
-  export default Projects;
+}
+
+export default Projects;

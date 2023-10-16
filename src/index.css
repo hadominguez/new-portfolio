@@ -1,20 +1,119 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgba(255, 255, 255, 0.87);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #141414;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  margin: 0;
+  min-height: 100vh;
+  max-height: 1000vh;
+  background: linear-gradient(45deg,#013060 -52%,#000 81%,#11113a 95%);
+  padding: 1%;
 }
-.grid-container {
+.grid-body {
   display: grid;
-  grid-template-columns: 6% 94%;
+  grid-template-columns: 48% 48%;
   grid-gap: 5px;
+
+  height: 80vh;
+}
+@media (max-width: 600px) {
+  .grid-body {
+      grid-template-columns: 1fr;
+      height: 100%;
+  }
+}
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: 30% 64% 6% ;
+  grid-gap: 5px;
+}
+
+nav img{
+  max-width: 90%;
+  max-height: 10vh;
+  filter: drop-shadow(0px 0px 15px rgba(27, 38, 98, 0.75)) !important;
+}
+
+nav div a {
+  box-shadow: 5px 5px 10px 5px rgba(27, 38, 98, 0.75) !important;
+  white-space: nowrap;
+}
+nav div select {
+  box-shadow: 5px 5px 10px 5px rgba(27, 38, 98, 0.75) !important;
+}
+
+.circular--portrait {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 640px) {
+  .menu-pc {
+    display: none;
+  }
+
+  .menu-responsive {
+    display: block;
+  }
+}
+
+
+.outer {
+  border-left: 2px solid #6c6c6c;
+  padding-top: 5%;
+}
+
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  left: -30px;
+  border: 3px solid rgb(15, 84, 136);
+}
+
+
+.timeline {
+  overflow-y: auto;
+}
+
+.socials{
+  display: grid;
+  grid-template-columns: 33% 33% 33% ;
+  text-align: center;
+}
+
+.social-link{
+  width: 100%;
+  filter: drop-shadow(0px 0px 15px rgba(23, 65, 106, 0.75)) !important;
+  white-space: nowrap;
 }
