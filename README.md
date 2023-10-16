@@ -18,7 +18,7 @@ Before getting started, make sure you have [Node.js](https://nodejs.org/) instal
 git clone https://github.com/hadominguez/new-portfolio.git
 
 # Navigate to the project directory
-cd your-portfolio
+cd new-portfolio
 
 # Install dependencies
 npm install
