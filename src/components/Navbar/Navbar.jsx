@@ -30,7 +30,7 @@ const Navbar = () => {
                     <Link className="text-lg mt-1 block w-full py-2 px-3 border rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300 sm:text-sm" to="/contact">{t('menu.contact')}</Link>
                 </div>
 
-                <div className="menu-pc flex items-center space-x-4">
+                <div className="menu-pc flex items-center space-x-4" style={{"pointer-events": "none"}}>
                     <img src="logo.png" alt="Logo" className="mx-auto" />
                 </div>
                 <div className="menu-pc flex items-center space-x-4">

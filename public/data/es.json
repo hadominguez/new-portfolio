@@ -5,6 +5,7 @@
         "experience": "Experiencia",
         "skills": "Habilidades",
         "projects": "Proyectos",
+        "live_projects": "Proyectos en vivo",
         "contact": "Contáctame"
     },
     "name": "Hernán Ariel Domínguez",
@@ -13,12 +14,10 @@
     "photo": "/photo.jpeg",
     "photo_description": "Foto de Hernán",
     "about_description": "Soy un profesional dedicado con experiencia en el desarrollo full stack, lo que significa que no solo domino el lado del servidor y el cliente, sino que también tengo una comprensión integral de todo el proceso de desarrollo de software. Mi enfoque es ofrecer soluciones completas y escalables.",
-    "skills_description": "Esta página está en desarrollo",
-    "projects_description": "Esta página está en desarrollo",
-    "contact_description": "Esta página está en desarrollo",
-    "linkedin": "Linkedin",
-    "github": "GitHub",
-    "hackerrank": "HackerRank",
+    "skills_description": "Mi carrera en el desarrollo de software me ha brindado la oportunidad de trabajar con una amplia variedad de tecnologías. A lo largo de los años, he adquirido experiencia en numerosos lenguajes de programación, frameworks y herramientas. Esta diversidad tecnológica me ha permitido adaptarme con éxito a diferentes entornos y desafíos de desarrollo, lo que me ha convertido en un profesional versátil y capaz de abordar una amplia gama de proyectos.",
+    "projects_description": "Aquí puedes ver algunos de mis proyectos públicos en GitHub.",
+    "live_projects_description": "Esta página está en desarrollo.",
+    "contact_description": "Si deseas ponerse en contacto conmigo o conocer más sobre mi trabajo, no dudes en seguirme en mis redes sociales.",
     "page_contact": {
         "info": "Información de Contacto",
         "email": "Email",
@@ -171,6 +170,11 @@
             "location": "José C. Paz, Buenos Aires, Argentina"
         }
     ],
+    "page_skill": {
+        "programming_languages": "Lenguajes de Programación",
+        "libraries_frameworks": "Bibliotecas y Marcos de Trabajo",
+        "databases": "Bases de datos"
+    },
     "skills": {
         "programming_languages": [
             {
@@ -190,7 +194,7 @@
             },
             {
                 "name": "C#",
-                "icon": "/icons/c#.svg",
+                "icon": "/icons/csharp.svg",
                 "level": 70
             },
             {
@@ -256,7 +260,7 @@
                 "level": 70
             },
             {
-                "name": "ASP.NET Core",
+                "name": "ASP.NET",
                 "icon": "/icons/net-core.svg",
                 "level": 60
             }
@@ -284,5 +288,36 @@
             }
         ]
     },
-    "open_source_projects": []
+    "projects": [
+        {
+            "name": "Task Management - Laravel 9 Project with Vite and Tailwind CSS",
+            "links": ["https://github.com/hadominguez/tasks-laravel-tailwind"],
+            "images": ["/projects/tasks.png"]
+        },
+        {
+            "name": "COVID-19 Dashboard",
+            "links": ["https://github.com/hadominguez/covid-dashboard"],
+            "images": ["/projects/covid.png"]
+        },
+        {
+            "name": "Scraping Bot Discord - Nike Jordan Edition",
+            "links": ["https://github.com/hadominguez/scraping-bot-discord"],
+            "images": ["/projects/bot-discord.png"]
+        },
+        {
+            "name": "API Market Apollo Server",
+            "links": ["https://github.com/hadominguez/api-market-apollo-server"],
+            "images": ["/projects/api-apollo.png"]
+        },
+        {
+            "name": "API-REST of Providers",
+            "links": ["https://github.com/hadominguez/api-proveedores"],
+            "images": ["/projects/api-rest.png"]
+        },
+        {
+            "name": "Mobile Blockchain-Based Voting System",
+            "links": ["https://github.com/hadominguez/app-votacion", "https://github.com/hadominguez/votacion-padron", "https://github.com/hadominguez/votacion-minero"],
+            "images": ["/projects/voting.png"]
+        }
+    ]
 }

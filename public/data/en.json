@@ -5,6 +5,7 @@
         "experience": "Experience",
         "skills": "Skills",
         "projects": "Projects",
+        "live_projects": "Live projects",
         "contact": "Contact me"
     },
     "name": "Hernán Ariel Domínguez",
@@ -13,12 +14,10 @@
     "photo": "/photo.jpeg",
     "photo_description": "Hernan's photo",
     "about_description": "I am a dedicated professional with experience in full-stack development, which means I not only master the server and client sides but also have a comprehensive understanding of the entire software development process. My focus is on delivering complete and scalable solutions.",
-    "skills_description": "This page is under development",
-    "projects_description": "This page is under development",
-    "contact_description": "This page is under development",
-    "linkedin": "Linkedin",
-    "github": "GitHub",
-    "hackerrank": "HackerRank",
+    "skills_description": "My career in software development has provided me with the opportunity to work with a wide variety of technologies. Over the years, I have gained experience in numerous programming languages, frameworks, and tools. This technological diversity has allowed me to successfully adapt to different development environments and challenges, making me a versatile professional capable of tackling a wide range of projects.",
+    "projects_description": "Here you can see some of my public projects on GitHub.",
+    "live_projects_description": "This page is under development.",
+    "contact_description": "If you want to get in touch with me or learn more about my work, feel free to follow me on my social media.",
     "page_contact": {
         "info": "Contact information",
         "email": "Email",
@@ -171,6 +170,11 @@
             "location": "José C. Paz, Buenos Aires, Argentina"
         }
     ],
+    "page_skill": {
+        "programming_languages": "Programming Languages",
+        "libraries_frameworks": "Libraries and Frameworks",
+        "databases": "Databases"
+    },
     "skills": {
         "programming_languages": [
             {
@@ -190,7 +194,7 @@
             },
             {
                 "name": "C#",
-                "icon": "/icons/c#.svg",
+                "icon": "/icons/csharp.svg",
                 "level": 70
             },
             {
@@ -256,7 +260,7 @@
                 "level": 70
             },
             {
-                "name": "ASP.NET Core",
+                "name": "ASP.NET",
                 "icon": "/icons/net-core.svg",
                 "level": 60
             }
@@ -284,5 +288,36 @@
             }
         ]
     },
-    "open_source_projects": []
+    "projects": [
+        {
+            "name": "Task Management - Laravel 9 Project with Vite and Tailwind CSS",
+            "links": ["https://github.com/hadominguez/tasks-laravel-tailwind"],
+            "images": ["/projects/tasks.png"]
+        },
+        {
+            "name": "COVID-19 Dashboard",
+            "links": ["https://github.com/hadominguez/covid-dashboard"],
+            "images": ["/projects/covid.png"]
+        },
+        {
+            "name": "Scraping Bot Discord - Nike Jordan Edition",
+            "links": ["https://github.com/hadominguez/scraping-bot-discord"],
+            "images": ["/projects/bot-discord.png"]
+        },
+        {
+            "name": "API Market Apollo Server",
+            "links": ["https://github.com/hadominguez/api-market-apollo-server"],
+            "images": ["/projects/api-apollo.png"]
+        },
+        {
+            "name": "API-REST of Providers",
+            "links": ["https://github.com/hadominguez/api-proveedores"],
+            "images": ["/projects/api-rest.png"]
+        },
+        {
+            "name": "Mobile Blockchain-Based Voting System",
+            "links": ["https://github.com/hadominguez/app-votacion", "https://github.com/hadominguez/votacion-padron", "https://github.com/hadominguez/votacion-minero"],
+            "images": ["/projects/voting.png"]
+        }
+    ]
 }

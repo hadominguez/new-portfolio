@@ -16,9 +16,10 @@ body {
   margin: 0;
   min-height: 100vh;
   max-height: 1000vh;
-  background: linear-gradient(45deg,#013060 -52%,#000 81%,#11113a 95%);
+  background: linear-gradient(45deg, #013060 -52%, #000 81%, #11113a 95%);
   padding: 1%;
 }
+
 .grid-body {
   display: grid;
   grid-template-columns: 48% 48%;
@@ -26,20 +27,21 @@ body {
 
   height: 80vh;
 }
+
 @media (max-width: 600px) {
   .grid-body {
-      grid-template-columns: 1fr;
-      height: 100%;
+    grid-template-columns: 1fr;
+    height: 100%;
   }
 }
 
 .grid-nav {
   display: grid;
-  grid-template-columns: 30% 64% 6% ;
+  grid-template-columns: 30% 64% 6%;
   grid-gap: 5px;
 }
 
-nav img{
+nav img {
   max-width: 90%;
   max-height: 10vh;
   filter: drop-shadow(0px 0px 15px rgba(27, 38, 98, 0.75)) !important;
@@ -49,6 +51,7 @@ nav div a {
   box-shadow: 5px 5px 10px 5px rgba(27, 38, 98, 0.75) !important;
   white-space: nowrap;
 }
+
 nav div select {
   box-shadow: 5px 5px 10px 5px rgba(27, 38, 98, 0.75) !important;
 }
@@ -58,7 +61,7 @@ nav div select {
   height: 300px;
   overflow: hidden;
   border-radius: 50%;
-  
+
 }
 
 .circular--portrait img {
@@ -106,14 +109,83 @@ nav div select {
   overflow-y: auto;
 }
 
-.socials{
+.socials {
   display: grid;
-  grid-template-columns: 33% 33% 33% ;
+  grid-template-columns: 33% 33% 33%;
   text-align: center;
 }
 
-.social-link{
+.social-link {
   width: 100%;
   filter: drop-shadow(0px 0px 15px rgba(23, 65, 106, 0.75)) !important;
   white-space: nowrap;
+}
+
+#root {
+  z-index: 3;
+}
+
+.stars {
+  pointer-events: none;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.40);
+  box-shadow: 1px 1px 20px 4px rgba(255, 255, 255, 0.30);
+}
+
+.blink-animation {
+  animation: blink 10s linear infinite;
+}
+
+@keyframes blink {
+  to {
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 1px 1px 20px 4px rgba(255, 255, 255, 0.01);
+  }
+}
+
+#color-image {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+  transform: scale(0.9);
+}
+
+#color-image:hover {
+  filter: grayscale(0%);
+  transform: scale(1);
+}
+
+.grid-projects {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 5px;
+}
+
+@media (max-width: 600px) {
+  .grid-projects {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.grid-skills {
+  display: grid;
+  grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+  grid-gap: 5px;
+}
+@media (max-width: 600px) {
+  .grid-skills {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
 }

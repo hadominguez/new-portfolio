@@ -5,13 +5,14 @@ const Contact = () => {
   const contacts = t('contact.links', { returnObjects: true });
 
   return (
-    <>
+    <div className='grid-body'>
       <div className="p-4">
-        <div className="p-8">
+        <div className="p-8 bg-gray-800 bg-opacity-30 rounded-lg">
           <div className="container mx-auto mt-8">
             <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">{t('menu.contact')}</span>
             </h1>
+            <h3 className="text-xl text-gray-400 mb-4">{t('contact_description')}</h3>
 
             <div className="mt-8">
               <h2 className="title mb-4 text-3xl font-extrabold dark:text-white md:text-2xl lg:text-2xl">{t('page_contact.info')}</h2>
@@ -43,11 +44,11 @@ const Contact = () => {
       <div className="p-4">
         <div className="p-8">
           <div className="mx-auto">
-            <img src={t('logo')} alt={t('photo_description')} />
+            <img id="color-image" src={t('logo')} alt={t('photo_description')} />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
